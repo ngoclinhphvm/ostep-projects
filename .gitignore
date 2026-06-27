@@ -1,0 +1,14 @@
+# 1. Ignore all files inside any subdirectory, at any depth
+**/text-out/
+**/tests/
+
+# 2. Match everything, but allow Git to walk the directory tree
+*
+!*/
+
+# 3. Whitelist ONLY the files you actually want to track
+!**/*.c
+!**/*.h
+!**/Makefile
+!**/README.md
+!.gitignore
